@@ -25,7 +25,7 @@ a {
 body{
     font-size: 18px;
     font-family: 'Manrope', sans-serif;
-    background-color: var(--ghost-white);
+    background-color: var(--white);
 }   
 
 .heading{
@@ -91,12 +91,14 @@ body{
     margin: 0 auto;
 }
 .services{
-    padding: 5rem 1rem;
+    background-color: var(--ghost-white);
+    padding: 2rem 1rem;
 }
 .service{
     margin-bottom: 2.5rem;
 }
 .number{
+    font-family: 'Fraunces', serif;
     margin: 0 auto 1.5rem;
     width: 3rem;
     height: 3rem;
@@ -118,4 +120,44 @@ body{
     line-height: 28px;
     text-align: center;
     color: var(--davys-gray);
+}
+.about{
+    padding: 4rem 1rem;
+}
+.founder{
+    padding: 0 2rem;
+}
+.founder img{
+    width: 100% 
+}
+.about-text{
+    background-color: var(--dark-purple);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: var(--white);
+}
+.about-heading{
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+.about-content{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.about-text .primary-btn{
+    margin: 0 auto;
+}
+
+.footer{
+    padding: 4rem 8rem;
+}
+.footer img{
+    margin: 0 auto 3.5rem;
+}
+.socials{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
 }
