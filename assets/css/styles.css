@@ -15,6 +15,9 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 a {
     text-decoration: none;
 }
@@ -22,7 +25,7 @@ a {
 body{
     font-size: 18px;
     font-family: 'Manrope', sans-serif;
-    color: var(--white);
+    background-color: var(--ghost-white);
 }   
 
 .heading{
@@ -34,6 +37,7 @@ body{
     color: var(--dark-purple);
     padding: 1rem 1.5rem;
     background-color: var(--eucaplyptus);
+    border: 2px solid var(--eucaplyptus);
     font-weight: 700;
     display: block;
     width: fit-content;
@@ -64,9 +68,11 @@ body{
     align-items: center;
     padding: 2rem 1rem;
     background-color: var(--dark-purple);
+    color: var(--white);
 }
 .hero{
     background-color: var(--dark-purple);
+    color: var(--white);
 }
 .hero div{
     padding: 2rem 1rem;
@@ -78,8 +84,38 @@ body{
     text-align: center;
     margin-bottom: 2rem;
 }
+.hero-heading span{
+    border-bottom: 2px solid var(--eucaplyptus); 
+}
 .hero a{
     margin: 0 auto;
 }
-
-
+.services{
+    padding: 5rem 1rem;
+}
+.service{
+    margin-bottom: 2.5rem;
+}
+.number{
+    margin: 0 auto 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid var(--davys-gray);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-heading{
+    font-size: 1.5rem;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.service-text{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: var(--davys-gray);
+}
