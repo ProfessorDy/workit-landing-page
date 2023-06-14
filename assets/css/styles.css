@@ -38,13 +38,10 @@ body{
     color: var(--dark-purple);
     padding: 1rem 1.5rem;
     background-color: var(--eucaplyptus);
-    border: 2px solid var(--eucaplyptus);
     font-weight: 700;
-    display: block;
-    width: fit-content;
 }
 .primary-btn:hover{
-    background-color: transparent;
+    background-color: var(--dark-purple);
     color: var(--eucaplyptus);
     border: 2px solid var(--eucaplyptus);
 }
@@ -62,26 +59,41 @@ body{
     color: var(--eucaplyptus);
 }
 
-/* Header */
+/* HEADER && HERO */
 .header{
     background-color: var(--dark-purple);
     color: var(--white);
+    border-bottom-left-radius: 60% 10%;
+    border-bottom-right-radius: 60% 10%;
+    padding: 2rem 1rem 9.75rem;
 }
-.header div{
+.header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 1rem 0;
     max-width: 90rem; 
-    margin-inline: auto;
+    margin: 0 auto 4rem;
 }
-/* Header Tablet */
+.hero{
+    text-align: center;
+}
+.hero .heading{
+    font-size: 3.125rem;
+    line-height: 50px ;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.hero .heading span{
+    border-bottom: 2px solid var(--eucaplyptus); 
+}
+/* HEADER && HERO Tablet */
 @media only screen and (min-width: 40.063em) {
     .header div{
         padding: 2rem 2.5rem 0;
     }
 }
-/* Header Desktop */
+/* HEADER && HERO Desktop */
 @media only screen and (min-width: 64.063em) {
     .header div{
         padding: 3.5rem 10rem 0;
@@ -89,35 +101,50 @@ body{
  }
 
 
-
+/* HERO
 .hero{
+    position: relative;
     background-color: var(--dark-purple);
     color: var(--white);
-    border-bottom-left-radius: 60% 10%;
-    border-bottom-right-radius: 60% 10%;
-}
-.hero div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-inline: auto;
-    padding: 2rem 1rem;
     
+}
+.hero .hero-text{
+    text-align: center;
 }
 
 .hero-heading{
-    font-size: 2.5rem;
-    line-height: 50px;
-    letter-spacing: 0px;
-    text-align: center;
+   
     margin-bottom: 2rem;
 }
-.hero-heading span{
-    border-bottom: 2px solid var(--eucaplyptus); 
-}
+
 .hero a{
     margin: 0 auto;
 }
+.hero img{
+    width: 320px;
+    position: absolute;
+    left: 2.25rem;
+    top: calc(389px - header);
+} */
+/* HERO  Tablet*/
+@media only screen and (min-width: 40.063em) {}
+/* HERO Desktop*/
+@media only screen and (min-width: 64.063em) {}
+
+
+/* MAIN */
+.main{
+    background-color: var(--ghost-white);
+    padding: 9.5rem 1rem 0;
+}
+
+.hero-img-container{
+    position: absolute;
+    width: 320px;
+    left: 36px;
+    top: 389px;
+}
+/* SERVICES */
 .services{
     background-color: var(--ghost-white);
     padding: 2rem 1rem;
