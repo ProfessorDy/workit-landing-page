@@ -27,6 +27,8 @@ body{
     font-family: 'Manrope', sans-serif;
     background-color: var(--white);
     position: relative;
+    width: 100vw;
+    overflow-x: hidden;
 }   
 
 .heading{
@@ -143,36 +145,6 @@ body{
  }
 
 
-/* HERO
-.hero{
-    position: relative;
-    background-color: var(--dark-purple);
-    color: var(--white);
-    
-}
-.hero .hero-text{
-    text-align: center;
-}
-
-.hero-heading{
-   
-    margin-bottom: 2rem;
-}
-
-.hero a{
-    margin: 0 auto;
-}
-.hero img{
-    width: 320px;
-    position: absolute;
-    left: 2.25rem;
-    top: calc(389px - header);
-} */
-/* HERO  Tablet*/
-@media only screen and (min-width: 40.063em) {}
-/* HERO Desktop*/
-@media only screen and (min-width: 64.063em) {}
-
 
 /* MAIN */
 .main{
@@ -211,6 +183,22 @@ body{
     color: var(--davys-gray);
 }
 
+/*  Tablet*/
+@media only screen and (min-width: 40.063em) {
+    .services{
+        padding: 0 6.125rem 0;
+    }
+    .service{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* Desktop*/
+@media only screen and (min-width: 64.063em) {}
+
+/* FOOTER */
 .footer{
     padding: 6.25rem 1rem 4rem;
 }
