@@ -27,8 +27,8 @@ body{
     font-family: 'Manrope', sans-serif;
     background-color: var(--white);
     position: relative;
-    width: 100vw;
-    overflow-x: hidden;
+    width: 100%;
+    overflow: hidden;
 }   
 
 .heading{
