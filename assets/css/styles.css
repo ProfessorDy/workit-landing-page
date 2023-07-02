@@ -80,6 +80,12 @@ a {
   color: var(--eucaplyptus);
 }
 
+@media only screen and (min-width: 64.063em) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+
 /* HEADER && HERO */
 .header {
   background-color: var(--dark-purple);
@@ -109,7 +115,7 @@ a {
 }
 .hero-img {
   position: absolute;
-  width: 320px;
+  width: 20rem;
   top: 0;
   bottom: 0;
   left: 0;
@@ -127,6 +133,10 @@ a {
 @media only screen and (min-width: 40.063em) {
   .header {
     padding: 2rem 2.5rem 12.5rem;
+    background-image: url(/assets/images/bg-pattern-1.svg),
+      url(/assets/images/bg-pattern-2.svg);
+    background-position: -60% 50%, 120% 60%;
+    background-repeat: no-repeat, no-repeat;
   }
   .hero {
     padding: 0 5.125rem;
@@ -135,15 +145,26 @@ a {
     font-size: 3.75rem;
   }
   .hero-img {
-    width: 514px;
-    margin: auto auto -9.75rem;
+    width: 32.125rem;
+    margin: 28rem auto 0 auto;
   }
 }
 /* HEADER && HERO Desktop */
 @media only screen and (min-width: 64.063em) {
+  .header {
+    padding: 3rem 10rem 20rem;
+    background-image: url(/assets/images/bg-pattern-1.svg),
+      url(/assets/images/bg-pattern-2.svg);
+    background-position: -10rem 8rem, calc(100% + 4rem) 65%;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  .hero .heading {
+    font-size: 5rem;
+  }
   .hero-img {
-    width: 767px;
-    margin: auto auto -18.5rem;
+    width: 45rem;
+    margin: 32rem auto 0 auto;
   }
 }
 
@@ -156,12 +177,20 @@ a {
 }
 
 /* SERVICES */
-.services .service {
-  margin-bottom: 2.5rem;
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 .services .number {
   font-family: "Fraunces", serif;
-  margin: 0 auto 1.5rem;
   width: 3rem;
   height: 3rem;
   border: 1px solid var(--davys-gray);
@@ -186,19 +215,6 @@ a {
 
 /*  Tablet*/
 @media only screen and (min-width: 40.063em) {
-  .main {
-    border-bottom-left-radius: 60% 10%;
-    border-bottom-right-radius: 60% 10%;
-  }
-  .services {
-    padding: 0 6.125rem 0;
-  }
-  .service {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-  }
 }
 /* Desktop*/
 @media only screen and (min-width: 64.063em) {
